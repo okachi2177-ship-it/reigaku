@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-gold: #B8960C;
+  --color-gold-light: #C9A84C;
+  --color-navy: #1A1A40;
+  --color-cream: #FAFAF5;
+  --color-text: #2D2D2D;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-text);
+  font-family: var(--font-noto-sans-jp), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-noto-serif-jp), serif;
+}
+
+@layer utilities {
+  .text-gold {
+    color: var(--color-gold);
+  }
+  .text-gold-light {
+    color: var(--color-gold-light);
+  }
+  .bg-navy {
+    background-color: var(--color-navy);
+  }
+  .bg-cream {
+    background-color: var(--color-cream);
+  }
+  .section-padding {
+    @apply py-20 px-4 sm:px-8 lg:px-16;
+  }
+  .container-max {
+    @apply max-w-6xl mx-auto;
+  }
+}

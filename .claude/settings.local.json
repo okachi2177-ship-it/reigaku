@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --app --no-eslint --no-src-dir --import-alias \"@/*\" --yes)",
+      "Bash(npx create-next-app@latest \"C:/Users/respi/Desktop/reigaku\" --typescript --tailwind --app --no-eslint --no-src-dir --import-alias \"@/*\" --yes)",
+      "Bash(bash --version)",
+      "Bash(dir \"C:\\\\Users\\\\respi\\\\Desktop\\\\reigaku\")",
+      "mcp__Claude_Preview__preview_start"
+    ]
+  }
+}

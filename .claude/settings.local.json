@@ -5,7 +5,8 @@
       "Bash(npx create-next-app@latest \"C:/Users/respi/Desktop/reigaku\" --typescript --tailwind --app --no-eslint --no-src-dir --import-alias \"@/*\" --yes)",
       "Bash(bash --version)",
       "Bash(dir \"C:\\\\Users\\\\respi\\\\Desktop\\\\reigaku\")",
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "WebFetch(domain:reigaku-2nly-en00egrk4-okachi2177-ship-its-projects.vercel.app)"
     ]
   }
 }

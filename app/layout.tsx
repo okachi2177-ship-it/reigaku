@@ -19,6 +19,7 @@ const notoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://reigaku.online"),
   title: {
     default: "零学マネジメント | 偏った思考を零ポイントに戻す学問",
     template: "%s | 零学マネジメント",

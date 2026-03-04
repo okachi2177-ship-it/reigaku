@@ -441,8 +441,7 @@ export default function ServicePage() {
                   <object
                     data="/certificates/reigaku-certificate.pdf"
                     type="application/pdf"
-                    className="w-full"
-                    style={{ height: "500px" }}
+                    className="w-full h-64 sm:h-[500px]"
                   >
                     <div className="p-8 text-center">
                       <p

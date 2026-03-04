@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import FadeInSection from "@/components/FadeInSection";
 import ContactCTA from "@/components/ContactCTA";
+import FreeTrialCTA from "@/components/FreeTrialCTA";
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 
 export const metadata: Metadata = {
@@ -588,6 +589,7 @@ export default function Home() {
         </div>
       </section>
 
+      <FreeTrialCTA />
       <ContactCTA />
     </>
   );

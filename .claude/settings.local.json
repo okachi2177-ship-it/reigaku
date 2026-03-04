@@ -6,7 +6,15 @@
       "Bash(bash --version)",
       "Bash(dir \"C:\\\\Users\\\\respi\\\\Desktop\\\\reigaku\")",
       "mcp__Claude_Preview__preview_start",
-      "WebFetch(domain:reigaku-2nly-en00egrk4-okachi2177-ship-its-projects.vercel.app)"
+      "WebFetch(domain:reigaku-2nly-en00egrk4-okachi2177-ship-its-projects.vercel.app)",
+      "WebFetch(domain:reigaku.vercel.app)",
+      "WebFetch(domain:reigaku-458d7qbku-okachi2177-ship-its-projects.vercel.app)",
+      "WebFetch(domain:reigaku-9n8syxyzv-okachi2177-ship-its-projects.vercel.app)",
+      "WebFetch(domain:reigaku-2nly.vercel.app)",
+      "Bash(cmd /c \"mkdir \"C:UsersrespiDesktopreigakupubliccertificates\" 2>nul & copy \"C:UsersrespiDesktopreigaku.claudeworktreesupbeat-mendeleevpubliccertificatesreigaku-certificate.pdf\" \"C:UsersrespiDesktopreigakupubliccertificatesreigaku-certificate.pdf\"\")",
+      "Bash(git -C \"C:/Users/respi/Desktop/reigaku\" status)",
+      "Bash(npm install resend)",
+      "Bash(npm install resend --prefix \"C:/Users/respi/Desktop/reigaku\")"
     ]
   }
 }

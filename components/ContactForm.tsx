@@ -74,11 +74,23 @@ export default function ContactForm() {
 
     setIsSubmitting(true);
 
-    // Simulate form submission (replace with actual API call)
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
 
-    setIsSubmitting(false);
-    setIsSubmitted(true);
+      if (!res.ok) {
+        throw new Error("送信に失敗しました");
+      }
+
+      setIsSubmitted(true);
+    } catch {
+      setErrors({ message: "送信に失敗しました。しばらく経ってから再度お試しください。" });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (isSubmitted) {

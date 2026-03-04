@@ -6,6 +6,12 @@
       "runtimeExecutable": "cmd",
       "runtimeArgs": ["/c", "npm run dev -- --port 3001"],
       "port": 3001
+    },
+    {
+      "name": "reigaku-main",
+      "runtimeExecutable": "cmd",
+      "runtimeArgs": ["/c", "npm run dev -- --port 3004"],
+      "port": 3004
     }
   ]
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import FadeInSection from "@/components/FadeInSection";
 import ContactCTA from "@/components/ContactCTA";
+import FreeTrialCTA from "@/components/FreeTrialCTA";
 
 export const metadata: Metadata = {
   title: "プロフィール・思い | 零学コンサルタント",
@@ -68,13 +69,13 @@ export default function AboutPage() {
                   className="text-[#2D2D2D] text-2xl font-bold text-center mb-2"
                   style={{ fontFamily: "var(--font-noto-serif-jp), serif" }}
                 >
-                  （お名前）
+                  岡地俊明
                 </h3>
                 <p
                   className="text-[#B8960C] text-sm tracking-widest text-center"
                   style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
                 >
-                  零学コンサルタント
+                  代表コンサルタント
                 </p>
               </div>
             </FadeInSection>
@@ -93,18 +94,19 @@ export default function AboutPage() {
                   style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
                 >
                   <p>
-                    ここには、コンサルタントの経歴・自己紹介文が入ります。
-                    零学との出会い、これまでの歩み、専門分野などについてお書きください。
+                    幼い頃から集団生活になじめずに苦しい思いをしてきました。小学生5年生では起立性調節障害になり、長いこと学校を休みました。毎日、布団の中で泣きながら、何故、生まれてきたのか？死ぬとどうなるのか？と考えていました。
                   </p>
                   <p>
-                    例：「幼い頃から頭の中のおしゃべりが止まらず、何をしていても
-                    『これで良いのだろうか』という思考が続いていました。
-                    そんな中、零学と出会い、思考の偏りを中立に戻す方法を学びました。」
+                    自分とは何者なのか？生きる意味とは？実社会で上手くいく人とそうではない人。鬱病になってしまう人と心を病まない人との違い。このような疑問を解決したくて、30年以上探索してきました。その間に本を2,000冊以上読み、宗教やオカルトを研究したり、セミナーに参加しては様々なセッションを受けてみたり、出来ることなら何でも実践してきました。その結果、人生は上向き、色々なことが見えてきました。
                   </p>
                   <p>
-                    例：「現在は零学コンサルタントとして、マンツーマントレーニングと
-                    零会を通じて、多くの方の思考の変容をサポートしています。
-                    一人一人の変化が、社会全体の変化につながると信じています。」
+                    ところが、いつも何かが足りないのです。その中である日、気が付いたことがありました。それは、納得のいく答え、幸せが目的だったのが、学ぶことが目的にすり替わっていたのです。そこからは、学びを止め、静かに自分と向き合い、直感が研ぎ澄ましていきました。そんなある日、全部わかったと悟ったような感覚がありました。
+                  </p>
+                  <p>
+                    その時に思いました。自分はこういった話を今後は誰にも話さない。自分の好きなことだけをして目の前のことをとことん楽しむ、そうして生きていくと。ところが、ある日たまたま出会った女性にお話会を開いてほしいとお願いされました。一度ならいいと承諾をしたものの、そこから何度もお話会が続きました。聞いてくださっている人の喜ぶ顔を見ていると、こちらも役に立てていると嬉しくなったからです。
+                  </p>
+                  <p>
+                    そして、ある時に気が付きました。どちらかというと右脳優位な人は抽象的な話を府に落とせるのに左脳優位な人は府に落とせない。その時に思い付いたのが、左脳優位な人にも府に落とせるように図を描きながらロジカルに丁寧に時間をかけて伝えてみようということでした。その結果できたのが「零学」になります。
                   </p>
                 </div>
               </div>
@@ -135,39 +137,17 @@ export default function AboutPage() {
 
           <FadeInSection delay={100}>
             <div className="border border-[#B8960C]/30 p-10 sm:p-16 text-center mb-12">
-              <div className="text-[#B8960C] text-4xl mb-8">零</div>
-              <p
-                className="text-white text-lg sm:text-2xl font-bold leading-relaxed"
-                style={{ fontFamily: "var(--font-noto-serif-jp), serif" }}
+              <div
+                className="text-white/80 text-sm sm:text-base leading-loose space-y-4"
+                style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
               >
-                零学を通じて、マインドワンダリング
-                <br />
-                （頭の中のおしゃべり）を静めさせて
-                <br />
-                すべての体験を充足に転換させること。
-              </p>
-            </div>
-          </FadeInSection>
-
-          <FadeInSection delay={200}>
-            <div
-              className="text-white/60 text-sm sm:text-base leading-loose text-center space-y-4"
-              style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
-            >
-              <p>
-                ここには、この理念に至った背景・思いについて記述が入ります。
-              </p>
-              <p>
-                例：「私たちが零学マネジメントを設立したのは、
-                思考の偏りによる苦しみを解消したいという強い思いからでした。
-                多くの人が頭の中のおしゃべりに振り回され、
-                本来の充足感を感じられずにいます。」
-              </p>
-              <p>
-                例：「零学の理論は、特定の思想や宗教に偏ることなく、
-                誰もが中立な視点を持てるよう設計されています。
-                知的で実践的なアプローチで、永久的な変化をもたらすことが私たちの使命です。」
-              </p>
+                <p>
+                  零学は生き方を仕組化することです。生き方とは悩み、不安がない生き方です。マンツーマントレーニングで理論をインストール、実践することで揺るぎない判断軸を作っていきます。
+                </p>
+                <p>
+                  零学は特定な考え方に偏らないバランス学になります。
+                </p>
+              </div>
             </div>
           </FadeInSection>
         </div>
@@ -240,13 +220,13 @@ export default function AboutPage() {
                     className="text-[#B8960C] font-bold"
                     style={{ fontFamily: "var(--font-noto-serif-jp), serif" }}
                   >
-                    零学コンサルタント
+                    代表コンサルタント
                   </p>
                   <p
                     className="text-[#2D2D2D] text-xl font-bold mt-1"
                     style={{ fontFamily: "var(--font-noto-serif-jp), serif" }}
                   >
-                    （お名前）
+                    岡地俊明
                   </p>
                 </div>
               </div>
@@ -255,6 +235,127 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Company Overview Section */}
+      <section className="py-24 px-4 sm:px-8 lg:px-16 bg-[#1A1A40]">
+        <div className="max-w-4xl mx-auto">
+          <FadeInSection>
+            <div className="text-center mb-16">
+              <p
+                className="text-[#B8960C] text-sm tracking-widest mb-4"
+                style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+              >
+                COMPANY
+              </p>
+              <h2
+                className="text-3xl sm:text-4xl font-bold text-white"
+                style={{ fontFamily: "var(--font-noto-serif-jp), serif" }}
+              >
+                事業概要
+              </h2>
+            </div>
+          </FadeInSection>
+
+          <FadeInSection delay={100}>
+            <div className="border border-[#B8960C]/30 p-10 sm:p-16">
+              <div className="space-y-6">
+                <div className="flex flex-col sm:flex-row gap-4 border-b border-[#B8960C]/20 pb-6">
+                  <span
+                    className="text-white/50 text-sm w-44 shrink-0"
+                    style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                  >
+                    事業者名
+                  </span>
+                  <span
+                    className="text-white font-bold"
+                    style={{ fontFamily: "var(--font-noto-serif-jp), serif" }}
+                  >
+                    零学マネジメント
+                  </span>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4 border-b border-[#B8960C]/20 pb-6">
+                  <span
+                    className="text-white/50 text-sm w-44 shrink-0"
+                    style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                  >
+                    代表コンサルタント
+                  </span>
+                  <span
+                    className="text-white font-bold"
+                    style={{ fontFamily: "var(--font-noto-serif-jp), serif" }}
+                  >
+                    岡地俊明
+                  </span>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4 border-b border-[#B8960C]/20 pb-6">
+                  <span
+                    className="text-white/50 text-sm w-44 shrink-0"
+                    style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                  >
+                    事業内容
+                  </span>
+                  <div
+                    className="text-white/80 text-sm leading-loose space-y-1"
+                    style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                  >
+                    <p>零学マンツーマントレーニング</p>
+                    <p>零会</p>
+                    <p>事業アドバイス（業務改善、効率化・仕組化・組織作り・新規事業・環境整備）</p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4 border-b border-[#B8960C]/20 pb-6">
+                  <span
+                    className="text-white/50 text-sm w-44 shrink-0"
+                    style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                  >
+                    コンサルタント
+                  </span>
+                  <span
+                    className="text-white/80 text-sm"
+                    style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                  >
+                    男性コンサルタント 4 名・女性コンサルタント 4 名
+                  </span>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4 border-b border-[#B8960C]/20 pb-6">
+                  <span
+                    className="text-white/50 text-sm w-44 shrink-0"
+                    style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                  >
+                    所在地
+                  </span>
+                  <span
+                    className="text-white/80 text-sm"
+                    style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                  >
+                    〒221-0005 神奈川県横浜市神奈川区松見町 1-7-3
+                  </span>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <span
+                    className="text-white/50 text-sm w-44 shrink-0"
+                    style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                  >
+                    連絡先
+                  </span>
+                  <span
+                    className="text-white/80 text-sm"
+                    style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                  >
+                    info.reigaku@〇〇〇
+                  </span>
+                </div>
+              </div>
+            </div>
+          </FadeInSection>
+        </div>
+      </section>
+
+      <FreeTrialCTA />
       <ContactCTA />
     </>
   );

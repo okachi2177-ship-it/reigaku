@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import FadeInSection from "@/components/FadeInSection";
 import ContactCTA from "@/components/ContactCTA";
+import FreeTrialCTA from "@/components/FreeTrialCTA";
+import CurriculumAccordion from "@/components/CurriculumAccordion";
 
 export const metadata: Metadata = {
   title: "サービス詳細 | 零学マンツーマントレーニング・零会",
@@ -256,6 +258,38 @@ export default function ServicePage() {
         </div>
       </section>
 
+      {/* Curriculum Section */}
+      <section className="py-24 px-4 sm:px-8 lg:px-16 bg-[#FAFAF5]">
+        <div className="max-w-6xl mx-auto">
+          <FadeInSection>
+            <div className="text-center mb-16">
+              <p
+                className="text-[#B8960C] text-sm tracking-widest mb-4"
+                style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+              >
+                CURRICULUM
+              </p>
+              <h2
+                className="text-3xl sm:text-4xl font-bold text-[#2D2D2D]"
+                style={{ fontFamily: "var(--font-noto-serif-jp), serif" }}
+              >
+                14日間のカリキュラム
+              </h2>
+              <p
+                className="text-[#2D2D2D]/60 mt-4 max-w-2xl mx-auto text-sm leading-relaxed"
+                style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+              >
+                各セッションは60〜90分。5〜10日に一度のペースで、
+                基礎から奥義まで段階的に深化していきます。
+              </p>
+            </div>
+          </FadeInSection>
+          <FadeInSection delay={100}>
+            <CurriculumAccordion />
+          </FadeInSection>
+        </div>
+      </section>
+
       {/* Installment Plans Section */}
       <section className="py-24 px-4 sm:px-8 lg:px-16 bg-[#1A1A40]">
         <div className="max-w-6xl mx-auto">
@@ -373,6 +407,65 @@ export default function ServicePage() {
               </FadeInSection>
             ))}
           </div>
+
+          {/* Certificate */}
+          <FadeInSection delay={600}>
+            <div className="flex gap-8">
+              {/* Connector line + icon */}
+              <div className="flex flex-col items-center">
+                <div className="w-px h-12 bg-[#B8960C]/20" />
+                <div className="w-12 h-12 bg-[#B8960C] flex items-center justify-center shrink-0">
+                  <span className="text-white text-lg">✦</span>
+                </div>
+              </div>
+              <div className="pb-8 flex-1">
+                <p
+                  className="text-[#B8960C] text-xs tracking-widest mb-2 uppercase"
+                  style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                >
+                  Certificate
+                </p>
+                <h3
+                  className="text-[#2D2D2D] font-bold text-lg mb-6"
+                  style={{ fontFamily: "var(--font-noto-serif-jp), serif" }}
+                >
+                  終了証の発行
+                </h3>
+                <p
+                  className="text-[#2D2D2D]/60 text-sm leading-relaxed mb-8"
+                  style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                >
+                  全14日間のトレーニングを修了された方には、終了証を発行いたします。
+                </p>
+                <div className="border border-[#B8960C]/30 bg-white overflow-hidden">
+                  <object
+                    data="/certificates/reigaku-certificate.pdf"
+                    type="application/pdf"
+                    className="w-full"
+                    style={{ height: "500px" }}
+                  >
+                    <div className="p-8 text-center">
+                      <p
+                        className="text-[#2D2D2D]/60 text-sm mb-4"
+                        style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                      >
+                        PDFの表示にはAdobe Acrobat Readerが必要です
+                      </p>
+                      <a
+                        href="/certificates/reigaku-certificate.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block border border-[#B8960C] text-[#B8960C] px-6 py-3 text-sm hover:bg-[#B8960C] hover:text-white transition-colors duration-300"
+                        style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                      >
+                        終了証を確認する
+                      </a>
+                    </div>
+                  </object>
+                </div>
+              </div>
+            </div>
+          </FadeInSection>
         </div>
       </section>
 
@@ -392,18 +485,12 @@ export default function ServicePage() {
                 style={{ fontFamily: "var(--font-noto-serif-jp), serif" }}
               >
                 零会
-                <span
-                  className="text-[#C9A84C] text-xl ml-3"
-                  style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
-                >
-                  （通称：荷下ろし会）
-                </span>
               </h2>
               <p
                 className="text-white/60 mt-4"
                 style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
               >
-                Zoomで集まる零学実践（0活）
+                Zoomで集まる零学実践
               </p>
             </div>
           </FadeInSection>
@@ -558,6 +645,156 @@ export default function ServicePage() {
         </div>
       </section>
 
+      {/* 事業アドバイス Section */}
+      <section className="py-24 px-4 sm:px-8 lg:px-16 bg-[#FAFAF5]">
+        <div className="max-w-6xl mx-auto">
+          <FadeInSection>
+            <div className="text-center mb-16">
+              <p
+                className="text-[#B8960C] text-sm tracking-widest mb-4"
+                style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+              >
+                BUSINESS CONSULTING
+              </p>
+              <h2
+                className="text-3xl sm:text-4xl font-bold text-[#2D2D2D]"
+                style={{ fontFamily: "var(--font-noto-serif-jp), serif" }}
+              >
+                事業アドバイス
+              </h2>
+              <p
+                className="text-[#2D2D2D]/60 mt-4 text-sm"
+                style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+              >
+                業務改善・効率化・仕組化・組織作り・新規事業・環境整備
+              </p>
+            </div>
+          </FadeInSection>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
+            {/* Spot */}
+            <FadeInSection delay={100}>
+              <div className="bg-white border border-[#B8960C]/20 p-8 sm:p-12 h-full">
+                <h3
+                  className="text-[#B8960C] text-sm tracking-widest mb-8 uppercase"
+                  style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                >
+                  Spot
+                </h3>
+                <p
+                  className="text-[#2D2D2D] text-xl font-bold mb-6"
+                  style={{ fontFamily: "var(--font-noto-serif-jp), serif" }}
+                >
+                  スポット料金
+                </p>
+                <div className="space-y-4">
+                  <div className="flex items-baseline gap-3">
+                    <span
+                      className="text-[#2D2D2D]/50 text-sm w-20 shrink-0"
+                      style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                    >
+                      時間
+                    </span>
+                    <span
+                      className="text-[#2D2D2D] font-bold"
+                      style={{ fontFamily: "var(--font-noto-serif-jp), serif" }}
+                    >
+                      2 時間
+                    </span>
+                  </div>
+                  <div className="pt-4 border-t border-[#B8960C]/20">
+                    <p
+                      className="text-[#2D2D2D]/50 text-xs mb-2"
+                      style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                    >
+                      料金
+                    </p>
+                    <p
+                      className="text-[#B8960C] text-4xl font-bold"
+                      style={{ fontFamily: "var(--font-noto-serif-jp), serif" }}
+                    >
+                      3 万円
+                    </p>
+                    <p
+                      className="text-[#2D2D2D]/50 text-xs mt-2"
+                      style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                    >
+                      交通費別途
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </FadeInSection>
+
+            {/* Retainer */}
+            <FadeInSection delay={200}>
+              <div className="bg-[#1A1A40] p-8 sm:p-12 h-full">
+                <h3
+                  className="text-[#B8960C] text-sm tracking-widest mb-8 uppercase"
+                  style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                >
+                  Retainer
+                </h3>
+                <p
+                  className="text-white text-xl font-bold mb-6"
+                  style={{ fontFamily: "var(--font-noto-serif-jp), serif" }}
+                >
+                  顧問契約
+                </p>
+                <div className="space-y-4">
+                  <div className="flex items-baseline gap-3">
+                    <span
+                      className="text-white/50 text-sm w-20 shrink-0"
+                      style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                    >
+                      頻度
+                    </span>
+                    <span
+                      className="text-white font-bold"
+                      style={{ fontFamily: "var(--font-noto-serif-jp), serif" }}
+                    >
+                      週一日 2 時間程度
+                    </span>
+                  </div>
+                  <div className="pt-4 border-t border-[#B8960C]/20">
+                    <p
+                      className="text-white/50 text-xs mb-2"
+                      style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                    >
+                      月額
+                    </p>
+                    <p
+                      className="text-[#B8960C] text-4xl font-bold"
+                      style={{ fontFamily: "var(--font-noto-serif-jp), serif" }}
+                    >
+                      12 万円〜
+                    </p>
+                    <p
+                      className="text-white/50 text-xs mt-2"
+                      style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+                    >
+                      交通費別途
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </FadeInSection>
+          </div>
+
+          <FadeInSection delay={300}>
+            <div className="bg-[#B8960C]/10 border border-[#B8960C]/30 p-6 text-center">
+              <p
+                className="text-[#2D2D2D] text-sm"
+                style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
+              >
+                事業アドバイスは基本的に訪問になります
+              </p>
+            </div>
+          </FadeInSection>
+        </div>
+      </section>
+
+      <FreeTrialCTA />
       <ContactCTA />
     </>
   );

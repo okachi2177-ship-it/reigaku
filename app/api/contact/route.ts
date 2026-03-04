@@ -59,6 +59,36 @@ export async function POST(request: Request) {
       `,
     });
 
+    await resend.emails.send({
+      from: FROM_EMAIL,
+      to: email,
+      subject: `【零学マネジメント】お問い合わせを受け付けました`,
+      html: `
+        <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto;">
+          <h2 style="color: #1A1A40; border-bottom: 2px solid #B8960C; padding-bottom: 8px;">
+            お問い合わせありがとうございます
+          </h2>
+          <p>${name} 様</p>
+          <p>このたびはお問い合わせいただきありがとうございます。<br>内容を確認のうえ、担当者よりご連絡いたします。</p>
+          <h3 style="color: #1A1A40; margin-top: 24px;">お問い合わせ内容</h3>
+          <table style="width: 100%; border-collapse: collapse; margin-top: 8px;">
+            <tr>
+              <td style="padding: 10px; background: #f5f5f0; font-weight: bold; width: 30%; border: 1px solid #e0e0d0;">お問い合わせ種別</td>
+              <td style="padding: 10px; border: 1px solid #e0e0d0;">${categoryLabel[category] ?? category}</td>
+            </tr>
+            <tr>
+              <td style="padding: 10px; background: #f5f5f0; font-weight: bold; border: 1px solid #e0e0d0;">お問い合わせ内容</td>
+              <td style="padding: 10px; border: 1px solid #e0e0d0; white-space: pre-wrap;">${message}</td>
+            </tr>
+          </table>
+          <p style="margin-top: 24px; color: #666; font-size: 14px;">
+            ※このメールは自動送信です。返信はできません。<br>
+            零学マネジメント
+          </p>
+        </div>
+      `,
+    });
+
     return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Email send error:", error);

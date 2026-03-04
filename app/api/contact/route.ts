@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const TO_EMAIL = "reigaku.info@gmail.com";
-const FROM_EMAIL = "お問い合わせ <onboarding@resend.dev>";
+const FROM_EMAIL = "零学マネジメント <noreply@reigaku.online>";
 
 export async function POST(request: Request) {
   try {

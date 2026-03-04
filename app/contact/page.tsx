@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import FadeInSection from "@/components/FadeInSection";
 import ContactForm from "@/components/ContactForm";
-import FreeTrialCTA from "@/components/FreeTrialCTA";
 
 export const metadata: Metadata = {
   title: "お問い合わせ | 零学マネジメント",
@@ -55,7 +54,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <FreeTrialCTA />
     </>
   );
 }

@@ -245,6 +245,7 @@ export default function ContactForm() {
             <option value="" disabled>
               選択してください
             </option>
+            <option value="trial">零会無料体験申し込み</option>
             <option value="training">マンツーマントレーニングについて</option>
             <option value="reikai">零会について</option>
             <option value="other">その他</option>

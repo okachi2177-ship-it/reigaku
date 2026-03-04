@@ -435,7 +435,7 @@ export default function ServicePage() {
                   className="text-[#2D2D2D]/60 text-sm leading-relaxed mb-8"
                   style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
                 >
-                  全14日間のトレーニングを修了された方には、終了証を発行いたします。
+                  全14日間のトレーニングを修了された方には、DAY15に終了証を添付ファイルにてお送りいたします。
                 </p>
                 <div className="border border-[#B8960C]/30 bg-white overflow-hidden">
                   <object

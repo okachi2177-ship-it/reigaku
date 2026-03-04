@@ -346,7 +346,7 @@ export default function AboutPage() {
                     className="text-white/80 text-sm"
                     style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
                   >
-                    info.reigaku@〇〇〇
+                    reigaku.info@gmail.com
                   </span>
                 </div>
               </div>

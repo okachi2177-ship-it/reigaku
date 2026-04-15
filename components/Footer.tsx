@@ -15,17 +15,44 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Logo & Description */}
           <div className="md:col-span-1">
-            <Link href="/" className="inline-block group">
-              <div
-                className="text-3xl font-bold text-[#B8960C] font-serif"
-                style={{ fontFamily: "var(--font-noto-serif-jp), serif" }}
-              >
-                零学マネジメント.
+            <div className="flex items-start gap-4">
+              <Link href="/" className="inline-block group">
+                <div
+                  className="text-3xl font-bold text-[#B8960C] font-serif"
+                  style={{ fontFamily: "var(--font-noto-serif-jp), serif" }}
+                >
+                  零学マネジメント.
+                </div>
+                <div className="text-xs text-[#C9A84C] tracking-widest mt-1">
+                  REIGAKU MANAGEMENT
+                </div>
+              </Link>
+              {/* SNSアイコン */}
+              <div className="flex items-center gap-2 mt-1">
+                <a
+                  href="https://lin.ee/TZTOM2h"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="公式LINE"
+                  className="w-8 h-8 border border-white/20 rounded-full flex items-center justify-center text-white/60 hover:text-[#00C300] hover:border-[#00C300] transition-colors duration-200"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.13.031-.196.031-.211 0-.41-.09-.543-.265l-2.774-3.769v3.438c0 .349-.282.629-.631.629-.345 0-.627-.28-.627-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .4.082.535.26l2.777 3.754V8.108c0-.345.282-.63.631-.63.346 0 .628.285.628.63v4.771zm-5.741 0c0 .349-.282.629-.631.629-.345 0-.627-.28-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" />
+                  </svg>
+                </a>
+                <a
+                  href="https://x.com/reigaku_okachi?s=11"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="X (Twitter)"
+                  className="w-8 h-8 border border-white/20 rounded-full flex items-center justify-center text-white/60 hover:text-white hover:border-white/60 transition-colors duration-200"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.741l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  </svg>
+                </a>
               </div>
-              <div className="text-xs text-[#C9A84C] tracking-widest mt-1">
-                REIGAKU MANAGEMENT
-              </div>
-            </Link>
+            </div>
             <p
               className="mt-4 text-white/60 text-sm leading-relaxed"
               style={{ fontFamily: "var(--font-noto-sans-jp), sans-serif" }}
@@ -67,41 +94,27 @@ export default function Footer() {
               Follow Us
             </h3>
             <div className="flex gap-4">
-              {/* Instagram placeholder */}
+              {/* X (Twitter) */}
               <a
-                href="#"
-                className="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center text-white/60 hover:text-[#C9A84C] hover:border-[#C9A84C] transition-colors duration-200"
-                aria-label="Instagram"
+                href="https://x.com/reigaku_okachi?s=11"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center text-white/60 hover:text-white hover:border-white/60 transition-colors duration-200"
+                aria-label="X (Twitter)"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.741l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                 </svg>
               </a>
-              {/* LINE placeholder */}
+              {/* LINE */}
               <a
-                href="#"
-                className="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center text-white/60 hover:text-[#C9A84C] hover:border-[#C9A84C] transition-colors duration-200"
-                aria-label="LINE"
+                href="https://lin.ee/TZTOM2h"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 border border-white/20 rounded-full flex items-center justify-center text-white/60 hover:text-[#00C300] hover:border-[#00C300] transition-colors duration-200"
+                aria-label="公式LINE"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.13.031-.196.031-.211 0-.41-.09-.543-.265l-2.774-3.769v3.438c0 .349-.282.629-.631.629-.345 0-.627-.28-.627-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .4.082.535.26l2.777 3.754V8.108c0-.345.282-.63.631-.63.346 0 .628.285.628.63v4.771zm-5.741 0c0 .349-.282.629-.631.629-.345 0-.627-.28-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" />
                 </svg>
               </a>

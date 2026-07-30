@@ -15,6 +15,13 @@ const nextConfig: NextConfig = {
       headers: securityHeaders,
     },
   ],
+  // public/game/ に置いたゲーム(Vite製の静的SPA)を /game で配信する。
+  // public/ はパス完全一致でしか配信されないため、/game を index.html へ解決する。
+  rewrites: async () => ({
+    beforeFiles: [{ source: "/game", destination: "/game/index.html" }],
+    afterFiles: [],
+    fallback: [],
+  }),
   images: {
     remotePatterns: [
       {
